@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::after,
+*::before,
+*:hover {
+  box-sizing: border-box;
+}
+
+/* ************** */
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.045em;
+
+  color: #333333;
+
+  margin: 30px 60px;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.navbar button {
+  border: none;
+  background: none;
+  outline: none;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px;
+  /* identical to box height */
+
+  color: #333333;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  border-bottom: 4px solid #2f80ed;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.form {
+  width: 70%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Gray 3 */
+
+  color: #828282;
+  margin: 20px auto;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px 10px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 12px;
+  outline: none;
+}
+
+.button-regular {
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  padding: 20px 40px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.button-danger {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.button-danger.delete {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-left: 40%;
+  margin-top: 30px;
+
+  color: #ffffff;
+  background-color: #eb5757;
+}
+
+.todo {
+  width: 70%;
+  margin: 30px auto;
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #000000;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  margin-left: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
